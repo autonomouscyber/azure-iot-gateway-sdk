@@ -5,7 +5,7 @@
       "loader": {
         "name": "native",
         "entrypoint": {
-          "module.path": "..\\..\\..\\modules\\logger\\Debug\\logger.dll"
+          "module.path": "./modules/logger/liblogger.so"
         }
       },
       "args": {
@@ -17,16 +17,10 @@
       "loader": {
         "name": "native",
         "entrypoint": {
-          "module.path": "..\\..\\..\\modules\\hello_world\\Debug\\hello_world.dll"
+          "module.path": "./modules/hello_world/libhello_world.so"
         }
       },
       "args": null
-    }
-  ],
-  "links": [
-    {
-      "source": "hello_world",
-      "sink": "logger"
     }
   ]
 }

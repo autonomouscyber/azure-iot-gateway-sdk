@@ -153,6 +153,10 @@ typedef struct GATEWAY_PROPERTIES_DATA_TAG
  */
 GATEWAY_EXPORT GATEWAY_HANDLE Gateway_CreateFromJson(const char* file_path);
 
+
+//TODO: ADD HEADER.
+GATEWAY_EXPORT int Gateway_UpdateFromJson(GATEWAY_HANDLE gw, const char* file_path);
+
 /** @brief      Creates a new gateway using the provided #GATEWAY_PROPERTIES.
  *
  *  @param      properties      #GATEWAY_PROPERTIES structure containing

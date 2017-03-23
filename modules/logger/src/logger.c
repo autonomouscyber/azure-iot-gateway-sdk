@@ -45,6 +45,7 @@ static int addJSONString(FILE* fout, const char* jsonString)
         }
         else
         {
+            LogInfo("Message Received to Log: %s", jsonString);
             result = 0;
         }
     }

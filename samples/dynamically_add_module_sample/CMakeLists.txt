@@ -9,15 +9,19 @@ set(dynamically_add_module_sources
 if(WIN32)
     set(dynamically_add_module_sources 
         ${dynamically_add_module_sources}
-        ./src/dynamically_add_module_win.json
+        ./src/modules_win.json
+        ./src/links_win.json
     )
-    set_source_files_properties(./src/dynamically_add_module_win.json PROPERTIES HEADER_FILE_ONLY ON)
+    set_source_files_properties(./src/modules_win.json PROPERTIES HEADER_FILE_ONLY ON)
+    set_source_files_properties(./src/links_win.json PROPERTIES HEADER_FILE_ONLY ON)
 else()
     set(dynamically_add_module_sources 
         ${dynamically_add_module_sources}
-        ./src/dynamically_add_module_lin.json
+        ./src/modules_lin.json
+        ./src/links_lin.json
     )
-    set_source_files_properties(./src/dynamically_add_module_lin.json PROPERTIES HEADER_FILE_ONLY ON)
+    set_source_files_properties(./src/modules_lin.json PROPERTIES HEADER_FILE_ONLY ON)
+    set_source_files_properties(./src/links_lin.json PROPERTIES HEADER_FILE_ONLY ON)
 endif()
 
 include_directories(./inc ${IOTHUB_CLIENT_INC_FOLDER})

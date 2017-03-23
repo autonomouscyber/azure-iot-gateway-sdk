@@ -155,7 +155,7 @@ GATEWAY_EXPORT GATEWAY_HANDLE Gateway_CreateFromJson(const char* file_path);
 
 
 //TODO: ADD HEADER.
-GATEWAY_EXPORT int Gateway_UpdateFromJson(GATEWAY_HANDLE gw, const char* file_path);
+GATEWAY_EXPORT int Gateway_UpdateFromJson(GATEWAY_HANDLE gw, const char* json_content);
 
 /** @brief      Creates a new gateway using the provided #GATEWAY_PROPERTIES.
  *
